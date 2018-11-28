@@ -1,0 +1,95 @@
+li.produto{
+    width: 308px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    display: block;
+    border: 1px solid #edeaea;
+    float: left;
+    min-height: 428px;
+    .nomeProduto{
+        padding-top: 45px;
+        padding-bottom: 28px;
+        h2{
+            min-height: 64px;
+        }
+        a{
+            text-decoration: none;
+            font-family: $fonteText;
+            color: $corNameProduct;
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+    }
+    .preco {
+        font-family: $fonteText;
+        .precoDe, .precoPor{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            p{
+                margin-left: 5px;
+            }
+        }
+        .precoDe{
+            color: #5e6774;
+            text-decoration: line-through;
+            opacity: 0.4;
+            padding-bottom: 3px;
+        }
+        .precoPor{
+            color: #5e6774;
+            p{
+                color: #353f4f;
+                font-size: 2.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .precoParcelado {
+        padding-top: 10px;
+        color: #5e6774;
+        padding-bottom: 3px;
+        font-family: $fonteText;
+    }
+    .fotoProduto {
+        text-align: center;
+        margin: 0px auto;
+        img{
+            vertical-align: middle;
+        }
+    }
+    .botao-compra{
+        margin-top: 20px;
+        display: none;
+        a {
+            font-size: 2.1rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 20px;
+            border: 1px solid #edeaea;
+            font-family: $fonteTitles;
+            font-weight: bold;
+            color: #353f4f;
+        }
+        i{
+            margin-left: 10px;
+        }
+    }
+    &:hover{
+        @extend %backgroundGradiente;
+        .botao-compra{
+            display: block;
+            a:hover{
+                box-sizing: border-box;
+                border-left: 10px solid #ff6600;
+                padding-left: 11px;
+                i{
+                    color: #ff6600;
+                }
+            }
+        }
+    }
+}
