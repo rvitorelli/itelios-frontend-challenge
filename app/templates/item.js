@@ -1,0 +1,3 @@
+export function Item(businessId, imageName, name, de, oldPrice, price, paymentConditions){
+    return `<li class="produto" idproduto="${businessId}"><div class="fotoProduto"><img src="${imageName}" /></div><div class="nomeProduto"><h2><a href="">${name}</a></h2></div><div class="preco"><div class="precoDe">${de} <p>${oldPrice}</p></div><div class="precoPor">Por: <p>${price}</p></div></div><div class="precoParcelado"><p>ou ${paymentConditions} sem juros</p></div><div class="botao-compra"><a href="">adicionar ao carrinho <i class="material-icons">add_shopping_cart</i></a></div></li>`
+}
