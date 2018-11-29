@@ -1,0 +1,50 @@
+section.master.slide .content {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    div#tns1-ow{
+        position: relative;
+        padding-bottom: 40px;
+        max-height: 410px;
+        @media(max-width:450px){
+            max-width: 310px;
+            margin: 0px auto;
+        }
+        .tns-controls {
+            display: none;
+        }
+        .tns-nav {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            margin: 0px auto;
+            button {
+                background: #adadad;
+                border: none;
+                width: 12px;
+                height: 12px;
+                border-radius: 100px;
+                margin: 0px 4px;
+                cursor: pointer;
+                font-size: 0px;
+                text-indent: -9999px;
+                padding: 0px;
+                &.tns-nav-active {
+                    background: #353f4f;
+                    border: none;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+    .tns-inner{
+        overflow: hidden;
+        ul.my-slider{
+            overflow: hidden;
+        }
+    }
+}
